@@ -93,3 +93,10 @@ Once `/api/ping` and `/actuator/health` both work, Phase 1 continues with:
 - A real `PlayerController` with `POST /api/players` and `GET /api/players/{id}`
 - DTOs separate from the entity, `@Valid` validation
 - Centralized error handling via `@ControllerAdvice`
+
+## Progress
+
+- Phase 0: Core Java fundamentals — complete
+- Phase 1: Spring Boot monolith (REST, JPA, DTOs, validation, error handling, N+1 fix) — complete
+- Phase 2: Matchmaking concurrency (thread-safe queue, scheduled engine, stress-tested, CompletableFuture, WebSocket) — complete
+- Phase 3: Caching (Redis) & JVM internals — in progress
