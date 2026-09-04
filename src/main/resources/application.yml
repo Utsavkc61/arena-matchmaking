@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: arena-core
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/arena
+    username: arena
+    password: arena
+
+  jpa:
+    hibernate:
+      # "update" auto-adjusts tables to match your @Entity classes. Handy
+      # while learning/prototyping. In a real production system you would
+      # NOT use this — you'd use a migration tool (Flyway/Liquibase) instead,
+      # since "update" can silently do things you didn't intend on a real
+      # database. Fine for Phase 1.
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # Exposes /actuator/health so you can hit it and see the app + DB
+        # connection status without writing any code for it yourself.
+        include: health,info

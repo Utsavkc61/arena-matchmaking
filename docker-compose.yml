@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: arena-postgres
+    environment:
+      POSTGRES_DB: arena
+      POSTGRES_USER: arena
+      POSTGRES_PASSWORD: arena
+    ports:
+      - "5432:5432"
+    volumes:
+      - arena-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  arena-postgres-data:
