@@ -4,7 +4,7 @@ A Spring Boot monolith. This is the very first milestone: prove the whole
 stack (Maven → Spring Boot → embedded Tomcat → Postgres) wires together
 correctly, before we add real entities, repositories, and matchmaking logic.
 
-##Testing Github Trigger with N8N right now
+##Testing Github Trigger with N8N 
 
 ## Project layout
 
