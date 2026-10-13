@@ -1,6 +1,6 @@
 # arena-core — Phase 1
 
-A Spring Boot monolith. This is the very first milestone: prove the whole
+A Spring Boot. This is my very first milestone: prove the whole
 stack (Maven → Spring Boot → embedded Tomcat → Postgres) wires together
 correctly, before we add real entities, repositories, and matchmaking logic.
 
